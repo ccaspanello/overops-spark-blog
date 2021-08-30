@@ -1,0 +1,6 @@
+language: java
+
+script: "cd app && mvnw clean install"
+
+#after_success:
+#- mvn clean test jacoco:report coveralls:report
