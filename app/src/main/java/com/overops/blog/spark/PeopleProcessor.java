@@ -36,7 +36,7 @@ public class PeopleProcessor
 		// Read main dataset
 		Dataset<Row> ds = spark.read()
 				.option("header", "true")
-				.option("delimiter", ",")
+				.option("delimiter", ";")
 				.option("inferSchema", "true")
 				.csv(input);
 		
