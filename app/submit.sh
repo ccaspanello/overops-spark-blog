@@ -18,5 +18,5 @@ spark-submit \
   --conf "spark.driver.extraJavaOptions=-agentpath:${AGENT_DIR}/lib/libTakipiAgent.dylib -Dtakipi.application.name=OverOpsBlog -Dtakipi.deployment.name=driver -Dtakipi.collector.host=192.168.0.115 -Dtakipi.collector.port=6060 -Dtakipi.log.to.console" \
   --conf "spark.executor.extraJavaOptions=-agentpath:${AGENT_DIR}/lib/libTakipiAgent.dylib -Dtakipi.application.name=OverOpsBlog -Dtakipi.deployment.name=executor -Dtakipi.collector.host=192.168.0.115 -Dtakipi.collector.port=6060 -Dtakipi.log.to.console" \
   target/app-1.0.0-SNAPSHOT.jar \
-  file://${DATA_DIR}/input file://${DATA_DIR}/output
+  file:/${DATA_DIR}/input file:/${DATA_DIR}/output
 
