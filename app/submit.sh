@@ -7,6 +7,9 @@ cd ..
 PROJECT_DIR=$(pwd)
 popd
 
+export SPARK_HOME=$PROJECT_DIR/spark/spark-3.1.2-bin-hadoop3.2
+export PATH=$SPARK_HOME/bin:$SPARK_HOME/sbin:$PATH
+
 DATA_DIR=$PROJECT_DIR/data
 #AGENT_DIR=$PROJECT_DIR/overops/Takipi
 AGENT_DIR=/Users/Shared/Takipi
